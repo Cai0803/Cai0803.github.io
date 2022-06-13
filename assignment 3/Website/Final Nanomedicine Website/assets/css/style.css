@@ -1,0 +1,115 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;700&family=Ubuntu:wght@300;400;500&display=swap'); 
+/* Font weights:
+   Ubuntu: 300, 400, 500
+   Barlow: 300, 400, 700
+*/
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    font-family: "Barlow", sans-serif;
+    font-size: 1.5em;
+    overflow-x: hidden;
+}
+.nav-title{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-size: 2.2em;
+}
+
+#nav{
+    background-color: #000;
+    opacity: 0.75; 
+    filter:(opacity=75);
+}
+
+.landingpage {
+    min-height: 100vh;
+    min-width: 100vw;
+    position: relative;
+    z-index: -10;
+    background-image: url(../images/landingpage.jpg); /* Photo by Julia Zyablova on Unsplash*/
+    background-size: cover;
+}
+
+.landingpage::before{
+    position: absolute;
+    box-sizing: border-box;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -2;
+}
+
+.landingpage .home-content h1{
+    font-size: 0.6vw;
+    margin: 0;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 10px;
+    z-index: 2;
+}
+
+
+.content{
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+
+.content h1{
+    font-size: 2em;
+    margin: 0;
+    color: #010101;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 10px;
+    z-index: 2;
+}
+
+.content h2{
+    font-size: 1.75em;
+    margin: 0;
+    color: #010101;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 10px;
+    z-index: 2;
+}
+
+.content-center
+{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, 1);
+}
+
+.text-justify{
+    text-align: justify;
+}
+
+@media (max-width: 780px) {
+    #footername col, mx-auto, a, p, svg
+    {
+        display: none;
+    }
+    #footername
+    {
+        display: none;
+    }
+    #firstelement px-xxl-5
+    {
+        margin: 0;
+    }
+}
